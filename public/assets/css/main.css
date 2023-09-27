@@ -1,0 +1,91 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#content-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#content {
+  flex-grow: 1;
+}
+
+/* Initially hide the edit and delete buttons */
+.editNote,
+.deleteNote {
+  display: none; /* Use display: none to hide the buttons */
+  position: absolute;
+  top: 20pxpx;
+  right: 10px;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+/* Display the buttons in a flex container */
+.card-with-hover:hover .editNote,
+.card-with-hover:hover .deleteNote {
+  display: flex;
+  flex-direction: row-reverse; /* Display the buttons in a row and reverse their order */
+  align-items: center; /* Center the buttons vertically */
+  opacity: 1;
+  z-index: 1; /* Ensure buttons are on top of card content */
+  gap: 10px; /* Add some spacing between the buttons */
+  text-decoration: none;
+}
+
+/* Darken the card on hover */
+.card-content-hover:hover {
+  background-color: #4e72df40; /* Adjust the alpha value (0.1) for the desired darkness */
+  transition: background-color 0.2s ease-in-out;
+}
+
+/* Ensure the button overlays the content */
+.viewNote {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1; /* Ensure theNote is above the content */
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+/* Show the button on hover */
+.card-content-hover:hover .viewNote {
+  opacity: 1;
+}
+
+/* Profile Card Container */
+.profile-card {
+  position: relative; /* Needed for positioning the icon */
+  /* Other styling for the card */
+}
+
+/* Card Content Container */
+.card-content {
+  position: relative; /* Relative positioning for absolute child */
+}
+
+/* Edit Icon (Initially Hidden) */
+.editProfile {
+  display: none;
+  position: absolute;
+  top: 5px; /* Adjust as needed */
+  right: 5px; /* Adjust as needed */
+  z-index: 1; /* Ensure the icon is above other content */
+}
+
+/* Show the edit icon on hover */
+.profile-card:hover .editProfile {
+  display: inline-block; /* or "inline" as needed */
+}
+
+/* Change the color of the "+" icon to blue (primary) */
+.dataTables_wrapper .dataTable > tbody > tr > td.details-control > a:before {
+  color: #007bff; /* Replace with your desired color */
+}

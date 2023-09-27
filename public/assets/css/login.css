@@ -1,0 +1,7 @@
+/* CSS for changing the button color */
+.btn-primary.active,
+.btn-primary:active,
+.btn-primary:focus,
+.btn-primary:hover {
+  background-color: #007bff !important;
+}
