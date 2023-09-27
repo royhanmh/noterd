@@ -81,7 +81,7 @@ Noterd is a web-based note-taking application that provides you with a simple an
 
 - **Framework**: CodeIgniter 4
 - **Database**: MySQL
-- **Frontend**: HTML, CSS, Bootstrap
+- **Frontend**: HTML, CSS, Bootstrap, SB Admin 2
 - **Backend**: PHP
 - **Authentication**: Built-in authentication system
 - **Rich Text Editor**: TinyMCE
@@ -93,4 +93,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Acknowledgments
 
 - Thanks to CodeIgniter 4 for the web application framework.
-- Icons adn Image made by [Freepik](https://www.freepik.com).
+- Thanks to [SB Admin 2](https://startbootstrap.com/theme/sb-admin-2) for the Bootstrap Admin Template
+- Thanks to [TinyMCE](https://www.tiny.cloud/) for the rich text Editor
+- Icons and Image made by [Freepik](https://www.freepik.com).
