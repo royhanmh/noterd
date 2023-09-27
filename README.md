@@ -51,7 +51,11 @@ Noterd is a web-based note-taking application that provides you with a simple an
    database.default.password = your_database_password
    ```
 
-6. Import the database to your local.
+6. Import the database using the provided SQL dump. You can use a tool like phpMyAdmin or run the following command:
+
+   ```shell
+   mysql -u your_database_username -p your_database_name < database_dump.sql
+   ```
 
 7. Start the development server:
 
@@ -73,6 +77,15 @@ Noterd is a web-based note-taking application that provides you with a simple an
 - Username: admin
 - Password: admin
 
+## Tech Stack
+
+- **Framework**: CodeIgniter 4
+- **Database**: MySQL
+- **Frontend**: HTML, CSS, Bootstrap
+- **Backend**: PHP
+- **Authentication**: Built-in authentication system
+- **Rich Text Editor**: TinyMCE
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
@@ -80,5 +93,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Acknowledgments
 
 - Thanks to CodeIgniter 4 for the web application framework.
-- Icon made by [Freepik](https://www.freepik.com) from [www.flaticon.com](https://www.flaticon.com).
-- image made by [Freepik](https://www.freepik.com)
+- Icons adn Image made by [Freepik](https://www.freepik.com).
